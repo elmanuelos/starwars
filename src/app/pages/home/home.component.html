@@ -1,0 +1,43 @@
+<mat-toolbar>
+  <span class="title">STAR WARS</span>
+  <span class="saberMas" [routerLink]="'/sabermas'"> Saber Mas</span>
+</mat-toolbar>
+<div class="bg">
+<mat-grid-list cols="1" rowHeight="2:1" class="header">
+
+  <mat-grid-tile>1</mat-grid-tile>
+
+</mat-grid-list>
+
+
+<mat-grid-list cols="1" rowHeight="0:1" class="cnt">
+  <mat-grid-list cols="2" rowHeight="1:1">
+
+    <mat-grid-tile *ngFor="let pelicula of peliculas">
+    <mat-card class="example-card">
+
+      <img class="poster" src="..\assets\{{pelicula.episode_id}}.jpg" alt="Poster Movie"
+      (click)="onPeliculaClick(pelicula)">
+
+
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{pelicula.title | reverse}}</mat-card-title>
+        <mat-card-subtitle>Episode: {{pelicula.episode_id }}</mat-card-subtitle>
+        <mat-card-subtitle>Directed by: {{pelicula.director | reverse}}</mat-card-subtitle>
+        <mat-card-subtitle>Date: {{pelicula.release_date | date: 'dd/MM/yyyy'}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          {{pelicula.opening_crawl | slice:0:180 | reverse}}...
+        </p>
+      </mat-card-content>
+
+    </mat-card>
+  </mat-grid-tile>
+
+  </mat-grid-list>
+
+</mat-grid-list>
+</div>

@@ -1,0 +1,23 @@
+button{
+    cursor:url(https://cdn.custom-cursor.com/db/cursor/32/Darth_Vader_Lightsaber.png) , auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.mat-subheader{
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(34, 160, 209);
+}
+
+.tituloPelicula{
+    color: rgb(34, 160, 209);
+}
+.mat-list-item{
+    color: rgb(34, 160, 209);
+}
+div{
+    background-color: rgb(39, 39, 39);
+
+}

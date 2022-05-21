@@ -1,0 +1,36 @@
+<div>
+<button  mat-raised-button (click)="clickBack()">
+    Back
+</button>
+
+<br>
+
+<mat-list *ngIf="pelicula">
+    <div mat-subheader class="tituloPelicula">{{pelicula.title | reverse}}</div>
+    <div mat-subheader>Personajes</div>
+    <mat-list-item>
+
+     <!-- <div mat-line *ngFor="let i of pelicula.characters">{{i}}</div>-->
+      <div mat-line *ngFor="let personajeName of personaje">{{personajeName | reverse}}</div>
+    </mat-list-item>
+    <mat-divider class="divi"></mat-divider>
+    <div mat-subheader>Planetas</div>
+    <mat-list-item>
+
+    <div mat-line *ngFor="let planetaName of planeta">{{planetaName | reverse}}</div>
+
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <div mat-subheader>Naves</div>
+    <mat-list-item>
+        <div mat-line *ngFor="let naveName of nave">{{naveName | reverse}}</div>
+
+
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+  <br>
+  <button  mat-raised-button (click)="clickBack()">
+      Back
+  </button>
+</div>

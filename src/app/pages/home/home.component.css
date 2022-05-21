@@ -1,0 +1,71 @@
+
+.bg{
+  background: url(src\assets\stars.jpeg);
+
+}
+
+mat-toolbar{
+  position: fixed;
+  z-index: 99;
+
+  background-color: rgb(29, 29, 29);
+}
+
+.title{
+  font-weight: bolder;
+  color: goldenrod;
+}
+.saberMas{
+  margin-left: 50px;
+  font-size: medium;
+  color:rgb(110, 110, 110);
+  cursor:url(https://cdn.custom-cursor.com/db/cursor/32/Darth_Vader_Lightsaber.png) , auto;
+}
+
+.example-card {
+
+  color: rgb(184, 184, 184);
+    max-width: 450px;
+    background-color: rgb(100, 100, 100);
+
+  }
+
+  .poster{
+
+    max-width: 230px !important;
+
+  }
+ .header{
+  background: url(src\assets\starwars1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+
+  .cnt{
+    background: rgb(37, 37, 37);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+  mat-card-header{
+    margin-left: -55px;
+  }
+
+  .mat-card-actions, .mat-card-subtitle, .mat-card-content {
+    margin-bottom: 8px;
+    color: rgb(184, 184, 184);
+}
+
+.card{
+display: flex;
+flex-wrap: wrap;
+}
+.image{
+  flex: 1 1 120px;
+  aspect-ratio: 1/1;
+
+}
+.content{
+flex: 1 1 200px;
+}

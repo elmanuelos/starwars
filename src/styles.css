@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;
+    cursor:url(https://cdn.custom-cursor.com/db/pointer/32/Darth_Vader_Lightsaber.png) , auto; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

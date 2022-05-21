@@ -1,0 +1,33 @@
+<button  mat-raised-button class="back" (click)="clickBack()">
+    Back
+</button>
+<div>
+
+    <form [formGroup]="saberMasForm" (submit)="send()">
+
+        <div>
+            <label for="name">Nombre</label><br>
+            <input type="text" formControlName="name" required>
+            <span *ngIf="validInputName()">*</span>
+        </div>
+
+        <div>
+            <label for="lastname">Apellido</label><br>
+            <input type="text" formControlName="lastName">
+            <span *ngIf="validInputLastName()">*</span>
+        </div>
+        <div>
+            <label for="dob">Fecha Nacimiento</label><br>
+            <input type="date" formControlName="dob">
+            <span *ngIf="validDOB()">*</span>
+        </div>
+        <div>
+                <button type="submit"[disabled]="saberMasForm.invalid" mat-raised-button color="primary">Submit</button>
+        </div>
+    </form>
+
+</div>
+<button  mat-raised-button class="back" (click)="clickBack()">
+    Back
+</button>
+<img src="..\assets\stormtrupper.png" alt="">

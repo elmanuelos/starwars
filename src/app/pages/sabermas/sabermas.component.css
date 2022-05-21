@@ -1,0 +1,37 @@
+
+form{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+input[type=text],[type=date] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  span{
+      font-weight: bolder;
+      color: brown;
+      font-size: xx-large;
+      margin-left: 15px;
+  }
+
+  .back{
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  button{
+    cursor:url(https://cdn.custom-cursor.com/db/cursor/32/Darth_Vader_Lightsaber.png) , auto;
+  }
+  img{
+    float: right;
+    margin-top: -100px;
+    width: 300px;
+    margin-right: 15px;
+  }
